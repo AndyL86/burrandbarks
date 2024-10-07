@@ -1,5 +1,43 @@
 @charset "UTF-8";
 
+html {
+  scroll-padding-top: 3.5rem;
+}
+
+header {
+  padding-top: 9.5rem;
+  padding-bottom: 6rem;
+}
+
+section {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
+.header-container {
+  background-color: #fff5ec;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.bg-colour {
+  background-color: #fff5ec;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.bg-nav {
+  background-color: #eab07d;
+}
+
+.bg-home {
+  background-image: url("/assets/home-background.jpg");
+  background-color: #cccccc;
+  background-attachment: fixed;
+  background-size: 100% 100%
+=======
 .bg-colour-new {
     background-color: #fff5ec;
 }
