@@ -10,7 +10,7 @@ header {
 }
 
 section {
-  padding-top: 9rem;
+  padding-top: 3rem;
   padding-bottom: 9rem;
 }
 
@@ -46,4 +46,12 @@ section {
 
 .nav-link {
   color: #593f3b !important; 
+}
+
+.map-iframe {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
