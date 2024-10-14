@@ -26,6 +26,7 @@ section {
 
 .navbar-collapse {
   justify-content: flex-end;
+  padding: 10px 0px 0px 0px;
 }
 
 .bg-nav {
@@ -54,4 +55,20 @@ section {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
+}
+
+.navbar {
+  padding-bottom: 0px !important;
+}
+
+.navbar-toggler {
+  margin-bottom: 7px !important;
+}
+
+.navbar-branding {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #fff;
+  padding-left: 15px;
+  padding-bottom: 10px;
 }
