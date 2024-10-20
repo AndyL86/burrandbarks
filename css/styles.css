@@ -24,6 +24,18 @@ section {
   border-radius: 10px;
 }
 
+.header-text {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+@media screen and (max-width: 600px) {
+  .header-text {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+}
+
 .bg-colour {
   background-color: #fff5ec;
 }
@@ -37,16 +49,12 @@ section {
   background-color: #eab07d !important;
 }
 
-.bg-nav {
-  background-color: #fff5ec;
-}
-
 .bg-home {
   background-color: #eab07d;
 }
 
 .bg-colour-new {
-    background-color: #fff5ec;
+  background-color: #fff5ec;
 }
 
 .page-sections {
@@ -81,16 +89,34 @@ section {
   padding-bottom: 10px;
 }
 
-.cb-font {
+h1, h2 {
   font-family: "Caveat Brush", cursive;
   font-weight: 400;
   font-style: normal;
   font-size: larger;
 }
 
-.cb-text {
+p, li {
   font-family: "Fredoka", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: large;
+}
+
+.call-icon {
+  text-decoration: none;
+  color: #eab07d;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.icon-size {
+  font-size: 3.5rem;
 }
