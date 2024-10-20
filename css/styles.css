@@ -35,8 +35,8 @@ section {
     margin-bottom: 0.25rem;
   }
 
-  .nav-tabs {
-    display: block;
+  .nav {
+    flex-direction: column;
   }
 
   li {
