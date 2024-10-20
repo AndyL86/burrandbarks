@@ -4,48 +4,39 @@ html {
   scroll-padding-top: 3.5rem;
 }
 
-header {
-  padding-top: 3rem;
-  padding-bottom: 6rem;
-}
-
 section {
-  padding-top: 3rem;
+  padding-top: 2rem;
   padding-bottom: 9rem;
 }
 
-#contact {
-  padding-top: 1.5rem;
+h1, h2, h4 {
+  color: #dd9a2e;
+  font-family: "Caveat Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: larger;
 }
 
-.header-container {
-  background-color: #fff5ec;
-  width: 50%;
-  border-radius: 10px;
+p, li {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: large;
 }
 
-.header-text {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+li {
+  color: #fff5ec;
 }
 
-@media screen and (max-width: 600px) {
-  .header-text {
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
-  }
+/* Navbar */
 
-  .nav {
-    flex-direction: column;
-  }
-
-  li {
-    font-size: small;
-  }
+.call-icon {
+  text-decoration: none;
+  color: #fff5ec;
 }
 
-.bg-colour {
-  background-color: #fff5ec;
+.nav-tabs .nav-link.active {
+  background-color: #fff5ec !important;
 }
 
 .navbar-collapse {
@@ -54,31 +45,11 @@ section {
 }
 
 .navbar-toggler {
-  background-color: #eab07d !important;
-}
-
-.bg-home {
-  background-color: #eab07d;
-}
-
-.bg-colour-new {
-  background-color: #fff5ec;
-}
-
-.page-sections {
-  height: 100vh;
+  background-color: #fff5ec !important;
 }
 
 .nav-link {
   color: #593f3b !important; 
-}
-
-.map-iframe {
-  padding-top: 6rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
 }
 
 .navbar {
@@ -97,23 +68,30 @@ section {
   padding-bottom: 10px;
 }
 
-h1, h2 {
-  font-family: "Caveat Brush", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: larger;
+.bg-colour-new {
+  background-color: #dd9a2e;
 }
 
-p, li {
-  font-family: "Fredoka", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: large;
+/* Header section */
+
+header {
+  padding-top: 3rem;
+  padding-bottom: 6rem;
 }
 
-.call-icon {
-  text-decoration: none;
-  color: #eab07d;
+.header-container {
+  background-color: #fff5ec;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.header-text {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.bg-home {
+  background-color: #fff5ec;
 }
 
 .social-links {
@@ -129,7 +107,51 @@ p, li {
   font-size: 3.5rem;
 }
 
-.serv-img {
-  width: 100%;
-  height: auto;
+/* About section */
+
+/* Services section */
+
+.list-group li {
+  font-size: medium;
+}
+
+.price-card {
+  width: 60% !important;
+}
+
+.card-header {
+  background-color: #fff5ec !important;
+}
+
+/* Contact section */
+
+#contact {
+  padding-top: 1.5rem;
+}
+
+.map-iframe {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .header-text {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+
+  li {
+    font-size: small;
+  }
+
+  .card-body {
+    padding: 15px 0px 0px 0px !important;
+  }
 }
