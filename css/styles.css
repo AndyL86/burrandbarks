@@ -17,7 +17,7 @@ h1, h2, h3, h4 {
   font-size: larger;
 }
 
-p, li {
+p, li, h5 {
   font-family: "Fredoka", sans-serif;
   font-weight: 400;
   font-style: normal;
