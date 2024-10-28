@@ -9,7 +9,7 @@ section {
   padding-bottom: 9rem;
 }
 
-h1, h2, h4 {
+h1, h2, h3, h4 {
   color: #dd9a2e;
   font-family: "Caveat Brush", cursive;
   font-weight: 400;
@@ -108,6 +108,16 @@ header {
 }
 
 /* About section */
+
+.team-title {
+  padding: 30px 15px 15px 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.team-card {
+  border: unset !important;
+}
 
 /* Services section */
 
