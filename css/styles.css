@@ -133,6 +133,25 @@ header {
   background-color: #fff5ec !important;
 }
 
+.pricing-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 600px) {
+  .pricing-group {
+    flex-direction: row;
+  }
+}
+
+.pricing-icons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
 /* Contact section */
 
 #contact {
