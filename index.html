@@ -62,9 +62,9 @@
                     </div>
                 </div>
                 <div class="social-links icon-size">
-                    <a href="https://www.instagram.com/burrandbarks?igsh=Z2p0bW5zeDk3Ynd2" class="mx-auto" target="_blank" title="Burr and barks instagram"><i class="fab fa-instagram" style="color: #dd9a2e;"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=61566241373128" class="mx-auto" target="_blank" title="Burr and barks facebook"><i class="fab fa-facebook" style="color: #dd9a2e;"></i></a>
-                    <a href="https://wa.me/07791354021" class="mx-auto" target="_blank"><i class="fab fa-whatsapp" style="color: #dd9a2e;"></i></a>
+                    <a aria-label="Instagram page" href="https://www.instagram.com/burrandbarks?igsh=Z2p0bW5zeDk3Ynd2" class="mx-auto" target="_blank" title="Burr and barks instagram"><i class="fab fa-instagram" style="color: #dd9a2e;"></i></a>
+                    <a aria-label="Facebook page" href="https://www.facebook.com/profile.php?id=61566241373128" class="mx-auto" target="_blank" title="Burr and barks facebook"><i class="fab fa-facebook" style="color: #dd9a2e;"></i></a>
+                    <a aria-label="Chat on WhatsApp" href="https://wa.me/7791354021" class="mx-auto" target="_blank"><i class="fab fa-whatsapp" style="color: #dd9a2e;"></i></a>
                 </div>
             </div>
         </header>
@@ -72,19 +72,28 @@
         <section id="about">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
-                  <h2 class="display-4">About Us...</h2>
+                  <h2 class="display-4 about-header">About Us</h2>
                     <div class="col-lg-6 order-lg-2">
                         <div class="card team-card h-100 p-3">
-                          <img src="assets/charlotte.jpg" class="card-img-top" alt="image of owner">
+                          <img src="assets/charlotte.jpg" class="about-img rounded mx-auto" alt="image of owner">
                         </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="card-body">
-                        <h3 class="card-title text-center pb-1">Charlotte - Head of Grooming</h3>
-                        <p class="fs-6 fw-light">
-                          My name is Charlotte, after 20 years working in the banking sector, I was given the huge choice to take redundancy. I embraced this opportunity to follow my dream and train professionally as a dog groomer. I completed both Level 2 and Level 3 City & Guilds dog grooming courses, equipping me with the skills and expertise to deliver the highest standards of care for all breeds.
-                          As a proud owner of cocker spaniels, I have a deep understanding of their unique grooming needs. I also work closely with a local spaniel charity, supporting their mission and helping improve the lives of these wonderful dogs.
-                          I’m now excited to launch Burr and Barks, where I offer a professional, tailored grooming service with a focus on comfort, safety, and the well-being of every dog. My goal is to provide not only expert grooming but also a caring, stress-free experience for both pets and their owners.</p>
+                        <h3 class="card-title text-center card-role">Charlotte - Head of Grooming</h3>
+                        <p class="fs-6 fw-light card-description">
+                          Hi, my name is Charlotte, I have always dreamed of owning my own Dog Grooming Salon and after 20 years working in the Banking Industry 
+                          I took the decision to follow my passion and set up Burr and Barks. My goal is to provide not only expert grooming but also a caring, 
+                          stress-free experience for both pets and their owners. As a proud owner of 2 Cocker Spaniels, I have a deep understanding of every dogs unique needs.
+                          <span id="dots">...</span>
+                          <span id="more">
+                          <br>
+                          Having completed both Level 2 and Level 3 City & Guilds dog grooming courses and being awarded Best Student Level 2 Dog Grooming,
+                          I am equipped with the skills and expertise to deliver the highest standards of care for all breeds.
+                          I have also worked closely Spaniel Aid dogs charity, supporting their mission and helping improve the lives of these wonderful dogs.
+                          </span>
+                        </p>
+                        <button class="btn btn-light btn-sm" onclick="readMore()" id="readButton">Read more</button>
                       </div>
                   </div>
                 </div>
@@ -94,20 +103,20 @@
                 <div class="row row-cols-md-2 g-4">
                     <div class="col-sm-1">
                       <div class="card team-card h-100 p-3">
-                        <img src="assets/hollie.jpg" class="card-img-top" alt="image of dog">
+                        <img src="assets/hollie.jpg" class="about-img mx-auto rounded" alt="image of dog">
                         <div class="card-body">
                           <h5 class="card-title text-center pb-1">Hollie - Director of Recreational Activities</h5>
-                          <p class="fs-6 fw-light">Hollie is our 10 year old Working Cocker Spaniel, she is a very loyal, loving and all round fantastic dog. 
+                          <p class="fs-6 fw-light card-description">Hollie is our 10 year old Working Cocker Spaniel, she is a very loyal, loving and all round fantastic dog. 
                             She is great at reading other dogs and is an extremely valued member of the family and the team. Although she is a little too obsessed with tennis balls.</p>
                         </div>
                       </div>
                     </div>
                     <div class="col-sm-1">
                       <div class="card team-card h-100 p-3">
-                        <img src="assets/mabel.jpg" class="card-img-top" alt="image of dog">
+                        <img src="assets/mabel.jpg" class="about-img mx-auto rounded" alt="image of dog">
                         <div class="card-body">
                           <h5 class="card-title text-center pb-1">Mabel - Head of Security and Welfare</h5>
-                          <p class="fs-6 fw-light">Mabel is our 6 year old Show Cocker Spaniel, she has been with us over 2 years after intially fostering her from Spaniel Aid dogs charity. She quickly showed us how loving and playful she is and it wasn't a difficult decision to adopt her.
+                          <p class="fs-6 fw-light card-description">Mabel is our 6 year old Show Cocker Spaniel, she has been with us over 2 years after intially fostering her from Spaniel Aid dogs charity. She quickly showed us how loving and playful she is and it wasn't a difficult decision to adopt her.
                              Since her arrival she has undergone double cateract surgery and has lost over 3kgs! Doesn't she look great!!</p>
                         </div>
                       </div>
@@ -118,83 +127,82 @@
         <!-- Services section-->
         <section class="bg-light" id="services">
           <div class="container px-5 mb-5">
-            <h1 class="pb-4 text-center">Services and Pricing</h1>
-            <p class="text-center">Please note - all prices will be discussed during consultation, but are subject to change</p>
+            <h2 class="pb-4 text-center display-4">Services and Pricing</h2>
+            <p class="text-center pb-4">Please note - all prices will be discussed during consultation, but are subject to change</p>
             <div class="row gx-5 pricing-group">
-                <div class="card border-warning mb-3" style="max-width: 19rem;">
+                <div class="card border-warning mb-5" style="max-width: 19rem;">
                   <h3 class="p-3 text-center">Full Grooms <i class="fas fa-paw" style="color: #dd9a2e;"></i></h3>
                   <div class="pricing-icons p-2"><i class="fas fa-cut "></i> <i class="fas fa-bath"></i> <i class="fas fa-wind"></i> <i class="fas fa-spray-can"></i></div>
                   <div class="card-body text-center">
                     <h6 class="card-title mt-2">prices from:</h6>
-                    <p class="fs-6 fw-light">Extra Small Dogs - £32</p>
-                    <p class="fs-6 fw-light">Small Dogs - £38</p>
-                    <p class="fs-6 fw-light">Medium Dogs - £45</p>
-                    <p class="fs-6 fw-light">Large Dogs - £60</p>
-                    <p class="fs-6 fw-light">Extra Large Dogs - price available on request</p>
+                    <div class="price-list">
+                      <p class="fs-6 fw-light price-name">Extra Small Dogs</p>
+                      <p class="fs-6 fw-light price-value">£32</p>
+                    </div>
+                    <div class="price-list">
+                      <p class="fs-6 fw-light price-name">Small Dogs</p>
+                      <p class="fs-6 fw-light price-value">£38</p>
+                    </div>
+                    <div class="price-list">
+                      <p class="fs-6 fw-light price-name">Medium Dogs</p>
+                      <p class="fs-6 fw-light price-value">£45</p>
+                    </div>
+                    <div class="price-list">
+                      <p class="fs-6 fw-light price-name">Large Dogs</p>
+                      <p class="fs-6 fw-light price-value">£60</p>
+                    </div>
+                    <div class="price-list">
+                      <p class="fs-6 fw-light price-name">Extra Large Dogs</p>
+                      <p class="fs-6 fw-light price-value">POA</p>
+                    </div>
                   </div>
                 </div>
-                <div class="card border-warning mb-3" style="max-width: 19rem;">
+                <div class="card border-warning mb-5" style="max-width: 19rem;">
                   <h3 class="p-3 text-center">Bath and Dry only <i class="fas fa-bone" style="color: #dd9a2e;"></i></h3>
                   <div class="pricing-icons p-2"><i class="fas fa-bath"></i> <i class="fas fa-wind"></i> <i class="fas fa-spray-can"></i></div>
                   <div class="card-body text-center">
                     <h6 class="card-title mt-2">prices from:</h6>
-                    <p class="fs-6 fw-light">Extra Small Dogs - £25</p>
-                    <p class="fs-6 fw-light">Small Dogs - £30</p>
-                    <p class="fs-6 fw-light">Medium Dogs - £35</p>
-                    <p class="fs-6 fw-light">Large Dogs - £40</p>
-                    <p class="fs-6 fw-light">Extra Large Dogs - £50</p>
+                    <div class="price-list">
+                      <p class="fs-6 fw-light price-name">Extra Small Dogs</p>
+                      <p class="fs-6 fw-light price-value">£25</p>
+                    </div>
+                    <div class="price-list">
+                      <p class="fs-6 fw-light price-name">Small Dogs</p>
+                      <p class="fs-6 fw-light price-value">£30</p>
+                    </div>
+                    <div class="price-list">
+                      <p class="fs-6 fw-light price-name">Medium Dogs</p>
+                      <p class="fs-6 fw-light price-value">£35</p>
+                    </div>
+                    <div class="price-list">
+                      <p class="fs-6 fw-light price-name">Large Dogs</p>
+                      <p class="fs-6 fw-light price-value">£40</p>
+                    </div>
+                    <div class="price-list">
+                      <p class="fs-6 fw-light price-name">Extra Large Dogs</p>
+                      <p class="fs-6 fw-light price-value">£50</p>
+                    </div>
                   </div>
                 </div>
-                <div class="card border-warning mb-3" style="max-width: 19rem;">
+                <div class="card border-warning mb-5" style="max-width: 19rem;">
                   <h3 class="p-3 text-center">Specialist services <i class="fas fa-bone" style="color: #dd9a2e;"></i></h3>
                   <div class="pricing-icons p-2"><i class="fas fa-hand-sparkles"></i> <i class="fas fa-dog"></i></div>
                   <div class="card-body text-center">
                     <h6 class="card-title mt-2">prices from:</h6>
-                    <p class="fs-6 fw-light">Hand Stripping - £70</p>
-                    <p class="fs-6 fw-light">Nail Clipping - £8</p>
-                    <p class="fs-6 fw-light">Puppy's First Groom - £28</p>
+                    <div class="price-list">
+                      <p class="fs-6 fw-light price-name">Hand Stripping</p>
+                      <p class="fs-6 fw-light price-value">£70</p>
+                    </div>
+                    <div class="price-list">
+                      <p class="fs-6 fw-light price-name">Nail Clipping</p>
+                      <p class="fs-6 fw-light price-value">£8</p>
+                    </div>
+                    <div class="price-list">
+                      <p class="fs-6 fw-light price-name">Puppy's First Groom</p>
+                      <p class="fs-6 fw-light price-value">£28</p>
+                    </div>
                   </div>
                 </div>
-                <!-- <div class="card mt-5 price-card mx-auto col-sm-4">
-                    <h4 class="card-header">Full Grooms <i class="fas fa-paw" style="color: #dd9a2e;"></i></h4>
-                    <div><i class="fas fa-cut"></i> <i class="fas fa-bath"></i> <i class="fas fa-wind"></i> <i class="fas fa-spray-can"></i></div>
-                    <div class="card-body">
-                      <p class="card-title">prices from:</p>
-                      <ul class="list-group py-4">
-                        <li class="list-group-item">Extra Small Dogs - £32</li>
-                        <li class="list-group-item">Small Dogs - £38</li>
-                        <li class="list-group-item">Medium Dogs - £45</li>
-                        <li class="list-group-item">Large Dogs - £60</li>
-                        <li class="list-group-item">Extra Large Dogs - price available on request</li>
-                      </ul>
-                    </div>
-                  </div> -->
-                  <!-- <div class="card price-card my-5 mx-auto col-sm-4">
-                    <h4 class="card-header">Bath and Dry only <i class="fas fa-bone" style="color: #dd9a2e;"></i></h4>
-                    <div><i class="fas fa-bath"></i> <i class="fas fa-wind"></i> <i class="fas fa-spray-can"></i></div>
-                    <div class="card-body">
-                      <p class="card-title">prices from:</p>
-                      <ul class="list-group py-4">
-                        <li class="list-group-item">Extra Small Dogs - £25</li>
-                        <li class="list-group-item">Small Dogs - £30</li>
-                        <li class="list-group-item">Medium Dogs - £35</li>
-                        <li class="list-group-item">Large Dogs - £40</li>
-                        <li class="list-group-item">Extra Large Dogs - £50</li>
-                      </ul>
-                    </div>
-                  </div> -->
-                  <!-- <div class="card price-card mx-auto col-sm-4">
-                    <h4 class="card-header">Specialist services</h4>
-                    <div><i class="fas fa-hand-sparkles"></i> <i class="fas fa-dog"></i></div>
-                    <div class="card-body">
-                      <p class="card-title">prices from:</p>
-                      <ul class="list-group py-4">
-                        <li class="list-group-item">Hand Stripping - £70</li>
-                        <li class="list-group-item">Nail Clipping - £8</li>
-                        <li class="list-group-item">Puppy's First Groom - £28</li>
-                      </ul>
-                    </div>
-                  </div> -->
             </div>
         </div>
         </section>
@@ -203,7 +211,7 @@
           <div class="container px-5 my-2 px-5">
             <div class="text-center mb-5">
                 <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
-                <h2 class="fw-bolder">Get in touch</h2>
+                <h2 class="pb-4 text-center display-4">Get in touch</h2>
                 <p class="lead mb-0">We'd love to hear from you</p>
             </div>
             <div class="row gx-5 justify-content-center">
@@ -270,11 +278,19 @@
         </section>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
-
             <div class="container px-4">
-              <p class="m-0 text-start text-white">Burr and Barks Dog Grooming Rothwell</p>
-              <p class="m-0 text-start text-white">burrandbarks@gmail.com</p>
-              <span class="m-0 text-white">Copyright &copy; Andy Linehan 2024</span>
+              <div class="row">
+                <div class="col-6 footer-start">
+                  <p class="m-0 text-start text-white fs-6 fw-light">Burr and Barks Dog Grooming</p>
+                  <p class="m-0 text-start text-white fs-6 fw-light">Rothwell LS26</p>
+                  <p class="m-0 text-start text-white fs-6 fw-light">burrandbarks@gmail.com</p>
+                </div>
+                <div class="col-6 footer-end">
+                  <p class="m-0 text-start text-white fs-6 fw-light">Opening Hours:</p>
+                  <p class="m-0 text-start text-white fs-6 fw-light">Mon - Fri | 9:00-17:00</p>
+                  <span class="m-0 text-white fs-6 fw-light">Copyright &copy; Andy Linehan 2024</span>
+                </div>
+              </div>
             </div>
         </footer>
         <!-- Bootstrap core JS-->
@@ -288,13 +304,18 @@
             "@context": "http://schema.org",
             "@type": "LocalBusiness",
             "name": "Burr and Barks",
+            "description": "A dog grooming salon based in Rothwell, Leeds, serving Oulton, Middleton, Carlton, Woodlesford and surrounding areas.",
+            "openingHours": "Mo, Tu, We, Th, Fr 9:00-17:00",
             "image": "https://burrandbarks.co.uk/assets/burr-logo2.png",
             "telephone": "+447791354021",
             "email": "burrandbarks@gmail.com",
             "address": {
               "@type": "PostalAddress",
-              "addressLocality": "Rothwell"
-            }
+              "addressCountry": "UK",
+              "addressLocality": "Rothwell",
+              "postalCode": "LS26"
+            },
+            "priceRange": "£8 - £120"
           }
           </script>
     </body>
