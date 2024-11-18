@@ -182,6 +182,26 @@ header {
   width: 35%;
 }
 
+.price-title {
+  padding: 1rem;
+}
+
+.care-name {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  width: 80%;
+}
+
+.care-value{
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  width: 20%;
+}
+
 .card-header {
   background-color: #fff5ec !important;
 }
@@ -193,6 +213,15 @@ header {
   justify-content: space-around;
 }
 
+.card {
+  max-width: 32rem!important;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    max-width: 21rem!important;
+  }
+}
 @media screen and (max-width: 600px) {
   .pricing-group {
     flex-direction: row;
