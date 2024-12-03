@@ -217,9 +217,66 @@ header {
   max-width: 32rem!important;
 }
 
+#breed_image {
+  width: 60%;
+}
+
+.breed-img {
+  display: flex;
+  justify-content: center;
+}
+
+.breed-section {
+  display: flex;
+}
+
+.breed-info {
+  padding: 40px 100px 40px;
+}
+
+.breed-selector {
+  width: 60%;
+}
+
+.breed-title {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.breed-stats {
+  font-weight: 600;
+}
+
+.breed-stats a {
+  font-weight: 300;
+}
 @media screen and (max-width: 600px) {
   .card {
     max-width: 21rem!important;
+  }
+
+  #breed_image {
+    width: 80%;
+  }
+
+  .breed-img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .breed-section {
+    flex-direction: column;
+  }
+
+  .breed-selector {
+    width: 75%;
+  }
+
+  .breed-info {
+    padding: 40px 40px;
   }
 }
 @media screen and (max-width: 600px) {
