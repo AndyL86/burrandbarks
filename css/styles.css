@@ -29,6 +29,9 @@ li {
 }
 
 /* Navbar */
+.email-nav {
+  padding-left: 15px;
+}
 
 .call-icon {
   text-decoration: none;
@@ -151,6 +154,10 @@ header {
 
   .cert-block {
     flex-direction: column!important;
+  }
+
+  .email-nav {
+    padding-left: 15px;
   }
 }
 
