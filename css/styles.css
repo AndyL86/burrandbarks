@@ -124,7 +124,7 @@ header {
 }
 
 .about-img {
-  width: 70%;
+  width: 60%;
   height: auto;
 }
 
@@ -144,10 +144,28 @@ header {
   .about-header {
     text-align: center;
   }
+
+  .cert-img {
+    width: 70px!important;
+  }
+
+  .cert-block {
+    flex-direction: column!important;
+  }
 }
 
 .card-role {
-  padding-bottom: 3rem;
+  padding: 1.5rem 0rem 1.5rem 0rem;
+}
+
+.cert-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 20px;
 }
 
 /* Services section */
