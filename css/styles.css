@@ -6,7 +6,7 @@ html {
 
 section {
   padding-top: 2rem;
-  padding-bottom: 9rem;
+  padding-bottom: 6rem;
 }
 
 h1, h3, h4 {
@@ -243,7 +243,7 @@ header {
 }
 
 #breed_image {
-  width: 60%;
+  width: 80%;
 }
 
 .breed-img {
@@ -276,13 +276,16 @@ header {
 .breed-stats a {
   font-weight: 300;
 }
+
+@media screen and (max-width: 960px) {
+  .breed-section {
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .card {
     max-width: 21rem!important;
-  }
-
-  #breed_image {
-    width: 80%;
   }
 
   .breed-img {
@@ -290,10 +293,6 @@ header {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-  }
-
-  .breed-section {
-    flex-direction: column;
   }
 
   .breed-selector {
@@ -373,5 +372,13 @@ header {
 
   .footer-email {
     font-size: small;
+  }
+}
+
+@media screen and (min-width: 600px) {
+
+  #carouselExampleControls {
+    width: 70%;
+    margin: auto;
   }
 }
