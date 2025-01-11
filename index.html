@@ -34,14 +34,24 @@
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-colour-new fixed-top" id="mainNav">
-            <div class="container px-2">
-                <div>
-                 <a href="tel:07791354021" class="call-icon"><i class="fa-solid fa-phone px-2"></i>Call Now</a>
-                 <a href="mailto:burrandbarks@gmail.com" class="call-icon  email-nav"><i class="fa-regular fa-envelope px-2"></i>Email</a>
-                </div>
-                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="row nav-contact" id="navContact">
+            <div class="col-6 nav-contact-info" style="padding-left: 0;">
+              <div class="nav-phone">
+              <a href="tel:07791354021" class="call-icon"><i class="fa-solid fa-phone px-2"></i>Call</a>
+              <a href="https://wa.me/7791354021" class="call-icon" style="padding-left: 10px;"><i class="fab fa-whatsapp px-2"></i>Whatsapp</a>
+              </div>
+              <p class="call-icon nav-contact-text">07791354021</p>
+            </div>
+            <div class="col-6 nav-contact-info">
+              <a href="mailto:burrandbarks@gmail.com" class="call-icon fs-5"><i class="fa-regular fa-envelope px-2"></i>Email</a>
+              <p class="call-icon nav-contact-text">burrandbarks@gmail.com</p>
+            </div>
+          </div>
+            <div class="container px-2 navbar-custom">
+              <img src="assets/burr-logo1.png" alt="" height="80px" width="130px">
+                 <button class="navbar-toggler" id="navToggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="nav nav-tabs">
+                    <ul class="nav nav-underline" style="display: flex; flex-direction: row;">
                       <li class="nav-item">
                         <a class="nav-link active" href="#home">Home</a>
                       </li>
@@ -62,10 +72,9 @@
             </div>
         </nav>
         <!-- Header-->
-        <header class="bg-home" id="home">
+        <header class="bg-home" id="home" style="margin-top: 120px;">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center justify-content-center">
-                    <div class="col-xl-5 col-xxl-6 d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="assets/burr-logo2.png" alt="Burr and Barks logo" /></div>
                     <div class="col-lg-8 col-xl-7 col-xxl-6">
                         <div class="header-text text-center text-xl-start">
                             <h1 class="display-5 mb-2 pt-3 text-center">Dog Grooming Rothwell</h1>
@@ -76,10 +85,11 @@
                         </div>
                     </div>
                 </div>
+                <h5 class="text-center">Follow us</h5>
                 <div class="social-links icon-size">
                     <a aria-label="Instagram page" href="https://www.instagram.com/burrandbarks?igsh=Z2p0bW5zeDk3Ynd2" class="mx-auto" target="_blank" title="Burr and barks instagram"><i class="fab fa-instagram" style="color: #dd9a2e;"></i></a>
                     <a aria-label="Facebook page" href="https://www.facebook.com/profile.php?id=61566241373128" class="mx-auto" target="_blank" title="Burr and barks facebook"><i class="fab fa-facebook" style="color: #dd9a2e;"></i></a>
-                    <a aria-label="Chat on WhatsApp" href="https://wa.me/7791354021" class="mx-auto" target="_blank"><i class="fab fa-whatsapp" style="color: #dd9a2e;"></i></a>
+                    <!-- <a aria-label="Chat on WhatsApp" href="https://wa.me/7791354021" class="mx-auto" target="_blank"><i class="fab fa-whatsapp" style="color: #dd9a2e;"></i></a> -->
                 </div>
             </div>
         </header>
@@ -315,69 +325,32 @@
         </section>
         <!-- Contact section-->
         <section class="bg-home" id="contact">
-          <div class="container px-5 my-2 px-5">
-            <div class="text-center mb-5">
-                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
-                <h2 class="pb-4 text-center display-4">Get in touch</h2>
-                <p class="lead mb-0">We'd love to hear from you</p>
+        <div class="col-xl-5 col-xxl-6 d-xl-block text-center" style="margin: auto;">
+          <img class="img-fluid rounded-3 my-5" src="assets/burr-logo2.png" alt="Burr and Barks logo" />
+          <p class="m-0 text-black fs-5 fw-medium">Opening Hours:</p>
+          <p class="m-0 text-black fs-5 fw-medium">Tues - Thurs | 9:00-17:00</p>
+        </div>
+        <div class="contact-quick-links">
+          <h6>Quick Links</h6>
+          <div style="padding: 20px;">
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#services">Services</a>
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </div>
+          <h6>Contact Us</h6>
+          <div style="padding: 20px;">
+            <div class="contact-links">
+              <a href="tel:07791354021" class="contact-icon-text" aria-label="Call us"><i class="fa-solid fa-phone px-2 contact-call-icon"></i>07791354021</a>
+              <a href="mailto:burrandbarks@gmail.com" class="contact-icon-text" aria-label="Email us"><i class="fa-regular fa-envelope px-2 contact-call-icon"></i>burrandbarks@gmail.com</a>
+              <a href="https://wa.me/7791354021" class="contact-icon-text" target="_blank" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp px-2 contact-call-icon"></i>Whatsapp</a>
             </div>
-            <div class="row gx-5 justify-content-center">
-                <div class="col-lg-6">
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- * * SB Forms Contact Form * *-->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- This form is pre-integrated with SB Forms.-->
-                    <!-- To make this form functional, sign up at-->
-                    <!-- https://startbootstrap.com/solution/contact-forms-->
-                    <!-- to get an API token!-->
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                        <!-- Name input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                            <label for="name">Full name</label>
-                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                        </div>
-                        <!-- Email address input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                            <label for="email">Email address</label>
-                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                        </div>
-                        <!-- Phone number input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                            <label for="phone">Phone number</label>
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                        </div>
-                        <!-- Message input-->
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                            <label for="message">Message</label>
-                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                        </div>
-                        <!-- Submit success message-->
-                        <!---->
-                        <!-- This is what your users will see when the form-->
-                        <!-- has successfully submitted-->
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mb-3">
-                                <div class="fw-bolder">Form submission successful!</div>
-                                To activate this form, sign up at
-                                <br />
-                                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                            </div>
-                        </div>
-                        <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
-                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                        <!-- Submit Button-->
-                        <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
-                    </form>
-                </div>
-            </div>
+          </div>
+          <h6>Follow Us</h6>
+          <div style="padding: 20px;">
+            <a aria-label="Instagram page" href="https://www.instagram.com/burrandbarks?igsh=Z2p0bW5zeDk3Ynd2" class="mx-auto fs-1 px-3" target="_blank" title="Burr and barks instagram"><i class="fab fa-instagram" style="color: #dd9a2e;"></i></a>
+            <a aria-label="Facebook page" href="https://www.facebook.com/profile.php?id=61566241373128" class="mx-auto fs-1 px-3" target="_blank" title="Burr and barks facebook"><i class="fab fa-facebook" style="color: #dd9a2e;"></i></a>
+          </div>
         </div>
         <div class="map-iframe">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2359.492216142678!2d-1.4849031729933029!3d53.745118044811264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48795d6df24ba773%3A0xdab0ad7d798615ef!2sClement%20Terrace%2C%20Rothwell%2C%20Leeds%20LS26%200DS!5e0!3m2!1sen!2suk!4v1728904589043!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -389,8 +362,6 @@
               <div class="row">
                 <div class="col-12" style="text-align: center;">
                   <p class="m-0 text-white fs-6 fw-medium">Burr and Barks Dog Grooming</p>
-                  <p class="m-0 text-white fs-6 fw-medium">Opening Hours:</p>
-                  <p class="m-0 text-white fs-6 fw-medium">Tues - Thurs | 9:00-17:00</p>
                   <span class="m-0 text-white fs-6 fw-medium">Copyright &copy; Andy Linehan 2024</span>
                 </div>
               </div>
