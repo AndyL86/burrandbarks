@@ -18,13 +18,6 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     };
 
-    // var navContact = document.querySelector("#navContact");
-    // var navClick = document.querySelector("#navToggler");
-    // navClick.addEventListener("click", () => {
-    //     navContact.classList.toggle("nav-open");
-    //     console.log("nav clicked")
-    // })
-
 
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');

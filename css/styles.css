@@ -47,7 +47,7 @@ li {
   flex-direction: row;
   justify-content: center;
   padding: 10px 0px 0px 0px;
-  background-color: #fff5ec !important;
+  background-color: #faece0 !important;
 }
 
 .navbar-toggler {
@@ -106,6 +106,10 @@ li {
   border-right: white 1px solid; 
 }
 
+.nav-contact-info:last-of-type {
+  border-right: none;
+}
+
 .nav-phone {
   width: 100%;
   display: flex;
@@ -131,6 +135,11 @@ li {
 
   .nav-contact-text {
     font-size: small;
+  }
+
+  .whatsapp-icon {
+    font-size: small;
+    display: inline-flex;
   }
 }
 
