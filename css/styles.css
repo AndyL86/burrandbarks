@@ -364,6 +364,12 @@ li {
   font-weight: 300;
 }
 
+.breed-details {
+  background-color: #fff5ec;
+  padding: 8px;
+  border: 1px solid;
+}
+
 @media screen and (max-width: 960px) {
   .breed-section {
     flex-direction: column;

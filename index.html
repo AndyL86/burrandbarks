@@ -269,17 +269,19 @@
           <div class="breed-section">
             <div class="breed-info col-lg-6">
               <h2 class="breed-title">Breed Information</h2>
-              <div class="breed-stats">
-                Select a breed:
-              <select onchange="showBreedImage(value)" name="breed_selector" id="breed_selector" class="breed-selector">
-              </select>
+              <div class="breed-details">
+                <div class="breed-stats">
+                  Select a breed:
+                <select onchange="showBreedImage(value)" name="breed_selector" id="breed_selector" class="breed-selector">
+                </select>
+                </div>
+              
+                <div class="breed-stats">Temprament: <a id="breed_json"></a></div>
+                <div class="breed-stats">Height: <a id="height_json"></a> <span class="fw-light">inches</span></div>
+                <div class="breed-stats">Weight: <a id="weight_json"></a> <span class="fw-light">kilograms</span></div>
+                <div class="breed-stats">Origin: <a id="origin_json"></a></div>
+                <div class="breed-stats">Life Span: <a id="life_span_json"></a></div>
               </div>
-            
-              <div class="breed-stats">Temprament: <a id="breed_json"></a></div>
-              <div class="breed-stats">Height: <a id="height_json"></a></div>
-              <div class="breed-stats">Weight: <a id="weight_json"></a></div>
-              <div class="breed-stats">Origin: <a id="origin_json"></a></div>
-              <div class="breed-stats">Life Span: <a id="life_span_json"></a></div>
             </div>
             
             <div class="breed-img col-lg-6">
