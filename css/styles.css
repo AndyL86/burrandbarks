@@ -4,9 +4,14 @@ html {
   scroll-padding-top: 8rem;
 }
 
-section {
+#about, #services, #gallery, #home {
   padding-top: 2rem;
   padding-bottom: 6rem;
+}
+
+#contact {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 h1, h3, h4 {
@@ -155,7 +160,7 @@ li {
 
 /* Header section */
 
-header {
+#home {
   padding-top: 3rem;
   padding-bottom: 6rem;
 }
@@ -500,5 +505,23 @@ header {
   #carouselExampleControls {
     width: 70%;
     margin: auto;
+  }
+}
+
+/* Pet Care HTML*/
+
+#petCare {
+  background-color: #fff5ec;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.pet-care-text {
+  padding: 70px 100px;
+}
+
+@media screen and (max-width: 767px){
+  .pet-care-text {
+    padding: 70px 30px;
   }
 }
