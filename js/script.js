@@ -96,8 +96,8 @@ fetch(url,{headers: {
 function showBreedImage(index) { 
     document.getElementById("breed_image").src= storedBreeds[index].image.url;
     document.getElementById("breed_json").innerHTML = storedBreeds[index].temperament;
-    document.getElementById("height_json").innerHTML = JSON.stringify(storedBreeds[index].height.imperial);
-    document.getElementById("weight_json").innerHTML = JSON.stringify(storedBreeds[index].weight.imperial);
+    document.getElementById("height_json").innerHTML = JSON.stringify(storedBreeds[index].height.metric);
+    document.getElementById("weight_json").innerHTML = JSON.stringify(storedBreeds[index].weight.metric);
     document.getElementById("origin_json").innerHTML = storedBreeds[index].origin;
     document.getElementById("life_span_json").innerHTML = storedBreeds[index].life_span;
 }
