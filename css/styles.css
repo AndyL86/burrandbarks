@@ -272,6 +272,14 @@ li {
   max-width: 21rem!important;
 }
 
+.featured-service {
+  width:500px;
+  height:auto;
+}
+.more-info {
+  font-size: medium;
+}
+
 .price-list {
   display: inline-flex;
   flex-direction: row;
@@ -394,6 +402,11 @@ li {
 
   .breed-info {
     padding: 40px 40px;
+  }
+
+  .featured-service {
+    width:300px!important;
+    height:auto;
   }
 }
 @media screen and (max-width: 767px) {
