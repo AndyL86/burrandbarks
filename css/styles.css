@@ -217,6 +217,12 @@ li {
   height: auto;
 }
 
+.cert-img-block {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
 @media screen and (max-width: 767px) {
   .about-img {
     width: 90%;
