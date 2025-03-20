@@ -1976,3 +1976,826 @@ LANDING PAGE
   ]
 }
 {% endschema %}
+
+HERO
+{% assign hero_banner = section.id | prepend: 'shopify-section-'%}
+<style type="text/css">
+  .enhanced-video-hero .shopify-video-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .enhanced-video-hero .shopify-video {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .enhanced-video-hero .shopify-video {
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+  }
+
+  .enhanced-video-hero .shopify-video.no-spacing {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .enhanced-video-hero .placeholder-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .enhanced-video-hero .placeholder-background .placeholder-svg {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    background-color: #3232321a;
+    fill: #32323259;
+    border: none;
+  }
+
+  .enhanced-video-hero .video-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .enhanced-video-hero .video-wrapper-desktop {
+    display: block;
+  }
+
+  .enhanced-video-hero .video-wrapper-mobile {
+    display: none;
+  }
+
+  .enhanced-video-hero .placeholder-background-desktop {
+    display: block;
+  }
+
+  .enhanced-video-hero .placeholder-background-mobile {
+    display: none;
+  }
+
+  .enhanced-video-hero .video-wrapper video {
+    width: 100vw;
+    height: 56.25vw;
+    min-height: 100%;
+    min-width: calc(100vw * 9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .enhanced-video-hero .video-wrapper .video-wrapper-mobile {
+    width: 100vw;
+    height: 178vw;
+    min-height: 100%;
+    min-width: calc(100vw * 16);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .enhanced-video-hero .full-width-placeholder {
+    object-fit: contain;
+  }
+
+  @media only screen and (max-width: 520px) {
+    .enhanced-video-hero .video-wrapper-desktop {
+      display: none;
+    }
+
+    .enhanced-video-hero .placeholder-background-desktop {
+      display: none;
+    }
+
+    .enhanced-video-hero .video-wrapper-mobile {
+      display: block;
+    }
+
+    .enhanced-video-hero .placeholder-background-mobile {
+      display: block;
+    }
+
+    .enhanced-video-hero
+    .video-full-width__content .btn-group .btn {
+      width: 90%;
+    }
+  }
+
+  .enhanced-video-hero .shopify-video-container.container-height-short {
+    min-height: 350px;
+  }
+
+  .enhanced-video-hero .shopify-video-container.container-height-medium {
+    min-height: 550px;
+  }
+
+  .enhanced-video-hero .container {
+    position: relative;
+    padding: 40px 6rem;
+    display: flex;
+    flex: 1 0 100%;
+  }
+
+  @media only screen and (max-width: 520px) {
+    .enhanced-video-hero .container {
+      position: relative;
+      padding: 25px 15px 15px 15px;
+      display: flex;
+      flex: 1 0 100%;
+    }
+  }
+
+  .enhanced-video-hero .video-full-width__content {
+    padding: 0;
+    max-width: 600px;
+    display: block;
+    height: auto;
+    text-align: center;
+  }
+
+  .enhanced-video-hero .shopify-video.single_headline .video-full-width__content {
+    text-align: center;
+  }
+
+  .enhanced-video-hero .shopify-video.single_headline .csc-title-block-header {
+    font-size: 74px;
+    line-height: 74px;
+    margin-bottom: 16px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .enhanced-video-hero .shopify-video.single_headline .csc-title-block-header {
+      font-size: 46px;
+      line-height: 46px;
+    }
+  }
+
+  .enhanced-video-hero .shopify-video.single_headline .csc-title-block-title {
+    margin-top: 0;
+  }
+
+  .enhanced-video-hero .video-full-width__content .btn {
+    margin-top: 15px;
+  }
+
+  .enhanced-video-hero .container.container-alignment-top-left {
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .enhanced-video-hero .container.container-alignment-top-center {
+    text-align: center;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .enhanced-video-hero .container.container-alignment-top-right {
+    text-align: right;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .enhanced-video-hero .container.container-alignment-center-left {
+    text-align: left;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .enhanced-video-hero .container.container-alignment-center {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .enhanced-video-hero .container.container-alignment-center-right {
+    text-align: right;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .enhanced-video-hero .container.container-alignment-bottom-left {
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .enhanced-video-hero .container.container-alignment-bottom-center {
+    text-align: center;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .enhanced-video-hero .container.container-alignment-bottom-right {
+    text-align: right;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .enhanced-video-hero .shopify-video.single_headline .container.container-alignment-center-left {
+      text-align: center;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  }
+
+  .enhanced-video-hero .container__nav > * {
+    flex: 1 1 0;
+  }
+
+  .enhanced-video-hero .container__nav .btn {
+    background-color: #fff;
+    border-top: 1px solid #323232;
+    border-bottom: 1px solid #323232;
+    border-left: none;
+    color: #323232;
+    border-right: 1px solid #323232;
+    line-height: 26px;
+  }
+
+  .enhanced-video-hero .container__nav .btn:last-of-type {
+    border-right: none;
+  }
+
+  .enhanced-video-hero .container__nav .btn:hover {
+    color: #0b7276;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .enhanced-video-hero .btn--primary {
+      line-height: 26px;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {  
+    .enhanced-video-hero .container.mobile-alignment-top-center {
+      text-align: center;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  
+    .enhanced-video-hero .container.mobile-alignment-center {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .enhanced-video-hero .container.mobile-alignment-bottom-center {
+      text-align: center;
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    .enhanced-video-hero .shopify-video-container.mobile-height-short {
+      min-height: 350px;
+    }
+  
+    .enhanced-video-hero .shopify-video-container.mobile-height-medium {
+      min-height: 550px;
+    }
+    
+    {% if section.settings.block_positioning_bottom %}
+      .enhanced-video-hero .video-full-width__content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    {% endif %}
+  }
+
+  .enhanced-video-hero
+   .video-full-width__content img {
+    height: auto;
+    width: 100%;
+  }
+
+  .enhanced-video-hero
+   .video-full-width__content .btn-group .btn {
+    margin: 0 4px 8px;
+  }
+
+  .enhanced-video-hero
+   .video-full-width__content-left .btn-group .btn {
+    margin: 0 8px 8px 0;
+  }
+
+  .enhanced-video-hero
+   .video-full-width__content-right .btn-group .btn {
+    margin: 0 0 8px 8px;
+  }
+
+  .enhanced-video-hero .btn-group {
+    margin-top: 15px;
+  }
+
+  .enhanced-video-hero .overlay-tint-no-tint {
+    background-color: unset;
+  }
+
+  .enhanced-video-hero .overlay-tint-light-tint {
+    background-color: rgba(57, 57, 57, 0.3);
+  }
+
+  .enhanced-video-hero .overlay-tint-medium-tint {
+    background-color: rgba(57, 57, 57, 0.5);
+  }
+
+  .enhanced-video-hero .overlay-tint-dark-tint {
+    background-color: rgba(57, 57, 57, 0.7);
+  }
+
+  .enhanced-video-hero .dark-mode-cdn,
+  .dark-mode-cdn p {
+    color: #fff;
+  }
+
+  .enhanced-video-hero .cdn-text-block {
+    margin: auto;
+  }
+
+  .enhanced-video-hero .cdn-placeholder {
+    object-fit: cover;
+    width: 100%;
+    max-width: unset !important;
+    height: 100%;
+  }
+
+  {%- for block in section.blocks -%}
+    {% case block.type %}
+      {%- when 'headline' -%}
+        {%- if block.settings.headline_image != blank -%}
+          #shopify-section-{{ section.id  }}.enhanced-video-hero
+          .video-full-width__heading-image {
+            max-width: {{ block.settings.image_width }}px;
+            margin: 5px auto;
+          }
+
+          @media only screen and (max-width: 768px) {
+            #shopify-section-{{ section.id  }}.enhanced-video-hero
+            .video-full-width__heading-image {
+              max-width: {{ block.settings.image_width_mobile }}px;
+            }
+          }
+        {%- endif -%}
+      {%- when 'text' -%}
+        {%- if block.settings.text != blank -%}
+          .enhanced-video-hero .cdn-text-block {
+            max-width: {{ block.settings.text_width }}px;
+          }
+        {% endif %}
+    {%- endcase -%}
+  {%- endfor -%}
+</style>
+
+<div class="shopify-video {% if section.settings.full_width %}video-full-width{% else %} page-width{% endif %}{% if section.settings.no_spacing %} no-spacing{% endif %}{% if section.settings.single_headline %} single_headline{% endif %}">
+  <div class="shopify-video-container container-height-{{ section.settings.video_height_desktop }} mobile-height-{{ section.settings.video_height_mobile }}">
+    {%- if section.settings.video_desktop == blank -%}
+      <div class="placeholder-background placeholder-background-desktop">
+        <img class="cdn-placeholder" src="{{ section.settings.image_placeholder_desktop | image_url: width: auto }}">
+      </div>
+    {%- else -%}
+      <div class="video-wrapper video-wrapper-desktop">
+        <video class="full-width-placeholder" playsinline autoplay muted loop poster="{{ section.settings.image_placeholder_desktop | img_url: '800x800'}}" controls="true" >
+          <source src="{{ section.settings.video_desktop }}" type="video/mp4" />
+          <img src="{{ section.settings.image_placeholder_desktop | img_url: '800x800'}}">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    {%- endif -%} 
+    {%- if section.settings.video_mobile == blank -%}
+      <div class="placeholder-background placeholder-background-mobile">
+        <img class="cdn-placeholder" src="{{ section.settings.image_placeholder_mobile | image_url: height: auto, crop: top }}">
+      </div>
+    {%- else -%}
+      <div class="video-wrapper video-wrapper-mobile">
+        <video class="full-width-placeholder" playsinline autoplay muted loop poster="{{ section.settings.image_placeholder_mobile | img_url: '800x800'}}" controls="true" >
+          <source src="{{ section.settings.video_mobile }}" type="video/mp4" />
+          <img src="{{ section.settings.image_placeholder_mobile | img_url: '800x800'}}">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    {%- endif -%}
+
+    <div class="container container-alignment-{{ section.settings.overlay_alignment }} mobile-alignment-{{ section.settings.mobile_alignment }} overlay-tint-{{ section.settings.overlay_tint }}">
+      <div class="video-full-width__content {% if section.settings.dark_mode %}dark-mode-cdn{% endif %}">
+        {%- if section.settings.title != blank -%}
+          <div class=" csc-title-block-subheader font-title-l">
+            {{ section.settings.title | escape }}
+          </div>
+        {%- endif -%}
+        {%- for block in section.blocks -%}
+          {% case block.type %}
+            {%- when 'headline' -%}
+              {%- if block.settings.headline_image == blank -%}
+                <h2 style="color: {{ block.settings.headline_color }};" class="csc-title-block-header font-display-{{ block.settings.headline_size }}-light video-full-width__heading" {{ block.shopify_attributes }}>
+                  {{ block.settings.headline }}
+                </h2>
+              {%- else -%}
+                <div class="video-full-width__heading-image">
+                  {{ block.settings.headline_image | image_url: width: 1000 | image_tag: srcset: nil, loading: 'lazy' }}
+                </div>
+              {%- endif -%}
+            {%- endcase -%}
+        {%- endfor -%}
+        <div class="block-container">
+          {%- if section.settings.subtitle != blank -%}
+            <div class=" csc-title-block-title font-title-l">
+              {{ section.settings.subtitle | escape }}
+            </div>
+          {%- endif -%}
+        {%- for block in section.blocks -%}
+          {% case block.type %}
+            {%- when 'text' -%}
+              <div class="csc-title-block-subheader font-text-s video-with-text__text rte cdn-text-block" {{ block.shopify_attributes }}>
+                {{ block.settings.text }}
+              </div>
+            {%- when 'button' -%}
+            <div class="btn-group btn-bottom">
+              {%- if block.settings.button_label != blank -%}
+                <a{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% endif %} class="btn{% if block.settings.button_style_secondary %}{% if section.settings.dark_mode %} btn--secondary-white{% else %} btn--secondary{% endif %}{% else %}{% if section.settings.dark_mode %} btn--solid-white{% else %} btn--primary{% endif %}{% endif %}"{% if block.settings.button_link == blank %} aria-disabled="true"{% endif %} {% render 'section-tracking-click', tracking_event_name: section.settings.tracking_event_name, tracking_section_page_path: request.path, tracking_section_title: seo_title, tracking_section_headline: seo_headline, tracking_section_subtitle: seo_subtitle, tracking_section_pos: section.index, tracking_section_link_path: block.settings.button_link %} {{ block.shopify_attributes }}>
+                  {{ block.settings.button_label | escape }}
+                </a>
+              {%- endif -%}
+              {%- if block.settings.second_button_label != blank -%}
+                <a{% if block.settings.second_button_link != blank %} href="{{ block.settings.second_button_link }}"{% endif %} class="btn{% if block.settings.second_button_style_secondary %}{% if section.settings.dark_mode %} btn--secondary-white{% else %} btn--secondary{% endif %}{% else %}{% if section.settings.dark_mode %} btn--solid-white{% else %} btn--primary{% endif %}{% endif %}"{% if block.settings.second_button_link == blank %} aria-disabled="true"{% endif %} {% render 'section-tracking-click', tracking_event_name: section.settings.tracking_event_name, tracking_section_page_path: request.path, tracking_section_title: seo_title, tracking_section_headline: seo_headline, tracking_section_subtitle: seo_subtitle, tracking_section_pos: section.index, tracking_section_link_path: block.settings.second_button_link %} {{ block.shopify_attributes }}>
+                  {{ block.settings.second_button_label | escape }}
+                </a>
+              {%- endif -%}
+            </div>
+          {%- endcase -%}
+        {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Enhanced video hero",
+  "tag": "section",
+  "class": "enhanced-video-hero",
+  "settings": [
+    {
+      "type": "text",
+      "id": "tracking_event_name",
+      "label": "Tracking event name"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "default": false,
+      "label": "Make section full width"
+    },
+    {
+      "type": "checkbox",
+      "id": "dark_mode",
+      "default": false,
+      "label": "Apply dark mode"
+    },
+    {
+      "type": "checkbox",
+      "id": "no_spacing",
+      "default": false,
+      "label": "Remove spacing around section"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title (optional)"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle (optional)"
+    },
+    {
+      "type": "select",
+      "id": "overlay_tint",
+      "label": "Overlay tint",
+      "default": "no-tint",
+      "options": [
+        {
+          "label": "No Tint",
+          "value": "no-tint"
+        },
+        {
+          "label": "Light",
+          "value": "light-tint"
+        },
+        {
+          "label": "Medium",
+          "value": "medium-tint"
+        },
+        {
+          "label": "Dark",
+          "value": "dark-tint"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": {
+        "en": "Desktop device settings"
+      }
+    },
+    {
+      "type": "text",
+      "id": "video_desktop",
+      "label": "Shopify CDN for desktop",
+      "info": "Video best in ratio 16:9"
+    },
+    {
+      "type": "select",
+      "id": "video_height_desktop",
+      "label": "Video height desktop",
+      "default": "medium",
+      "options": [
+        {
+          "label": "Short",
+          "value": "short"
+        },
+        {
+          "label": "Medium",
+          "value": "medium"
+        }
+      ]
+    },
+    {
+      "type": "image_picker",
+      "id": "image_placeholder_desktop",
+      "label": "Placeholder image for desktop"
+    },
+    {
+      "type": "select",
+      "id": "overlay_alignment",
+      "label": "Desktop alignment",
+      "default": "center-left",
+      "options": [
+        {
+          "label": "Top left",
+          "value": "top-left"
+        },
+        {
+          "label": "Top center",
+          "value": "top-center"
+        },
+        {
+          "label": "Top right",
+          "value": "top-right"
+        },
+        {
+          "label": "Center left",
+          "value": "center-left"
+        },
+        {
+          "label": "Center",
+          "value": "center"
+        },
+        {
+          "label": "Center right",
+          "value": "center-right"
+        },
+        {
+          "label": "Bottom left",
+          "value": "bottom-left"
+        },
+        {
+          "label": "Bottom center",
+          "value": "bottom-center"
+        },
+        {
+          "label": "Bottom right",
+          "value": "bottom-right"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": {
+        "en": "Mobile device settings"
+      }
+    },
+    {
+      "type": "checkbox",
+      "id": "block_positioning_bottom",
+      "default": false,
+      "label": "Block spacing - Headline top, text bottom, button bottom"
+    },
+    {
+      "type": "text",
+      "id": "video_mobile",
+      "label": "Shopify CDN for mobile",
+      "info": "Video best in square ratio"
+    },
+    {
+      "type": "select",
+      "id": "video_height_mobile",
+      "label": "Video height mobile",
+      "default": "medium",
+      "options": [
+        {
+          "label": "Short",
+          "value": "short"
+        },
+        {
+          "label": "Medium",
+          "value": "medium"
+        }
+      ]
+    },
+    {
+      "type": "image_picker",
+      "id": "image_placeholder_mobile",
+      "label": "Placeholder image for mobile"
+    },
+    {
+      "type": "select",
+      "id": "mobile_alignment",
+      "label": "Mobile alignment",
+      "default": "center",
+      "options": [
+        {
+          "label": "Top center",
+          "value": "top-center"
+        },
+        {
+          "label": "Center",
+          "value": "center"
+        },
+        {
+          "label": "Bottom center",
+          "value": "bottom-center"
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "headline",
+      "name": "Headline",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "headline",
+          "default": "Video with text",
+          "label": "Headline"
+        },
+        {
+          "type": "select",
+          "id": "headline_size",
+          "label": "Headline size",
+          "options": [
+            {
+              "value": "s",
+              "label": "Small"
+            },
+            {
+              "value": "m",
+              "label": "Medium"
+            },
+            {
+              "value": "l",
+              "label": "Large"
+            }
+          ],
+          "default": "m"
+        },
+        {
+          "type": "color",
+          "id": "headline_color",
+          "label": "Headline colour",
+          "default": "#323232"
+        },
+        {
+          "type": "image_picker",
+          "id": "headline_image",
+          "label": "Replace headline with image"
+        },
+        {
+          "type": "range",
+          "id": "image_width",
+          "min": 100,
+          "max": 500,
+          "step": 50,
+          "unit": "px",
+          "label": "Image width for desktop",
+          "default": 250
+        },
+        {
+          "type": "range",
+          "id": "image_width_mobile",
+          "min": 200,
+          "max": 450,
+          "step": 50,
+          "unit": "px",
+          "label": "Image width for mobile",
+          "default": 200
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Pair text with an video to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+          "label": "Text"
+        },
+        {
+          "type": "range",
+          "id": "text_width",
+          "min": 300,
+          "max": 500,
+          "step": 50,
+          "unit": "px",
+          "label": "Text area width",
+          "default": 300
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Buttons",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "Button label",
+          "label": "First button label",
+          "info": "Leave the label blank to hide the button."
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "First button link"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_style_secondary",
+          "default": false,
+          "label": "Use outline button style"
+        },
+        {
+          "type": "text",
+          "id": "second_button_label",
+          "label": "Second button label",
+          "info": "Leave the label blank to hide the button."
+        },
+        {
+          "type": "url",
+          "id": "second_button_link",
+          "label": "Second button link"
+        },
+        {
+          "type": "checkbox",
+          "id": "second_button_style_secondary",
+          "default": false,
+          "label": "Use outline button style"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Enhanced video hero",
+      "blocks": [
+        {
+          "type": "headline"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "button"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
