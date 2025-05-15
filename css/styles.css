@@ -428,6 +428,17 @@ li {
   font-size: x-large;
 }
 
+/* Testimonials */
+#testimonials {
+  background-color: #fff5ec;
+}
+
+.review-card {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
 /* Contact section */
 
 #contact {
@@ -538,11 +549,16 @@ li {
 #petCare {
   background-color: #fff5ec;
   padding-top: 3rem;
-  padding-bottom: 4rem;
+  padding-bottom: 1rem;
 }
 
 .pet-care-text {
   padding: 70px 100px;
+}
+
+.back-button {
+  text-decoration: none;
+  color: black;
 }
 
 @media screen and (max-width: 767px){
