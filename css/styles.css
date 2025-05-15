@@ -284,6 +284,7 @@ li {
 }
 .more-info {
   font-size: medium;
+  text-decoration: underline;
 }
 
 .price-list {
@@ -439,6 +440,13 @@ li {
   padding: 20px;
 }
 
+/* Gallery */
+
+.gallery-thumbnail {
+  display: flex;
+  justify-content: center;
+}
+
 /* Contact section */
 
 #contact {
@@ -446,7 +454,7 @@ li {
 }
 
 .contact-quick-links {
-  padding: 100px;
+  padding: 60px 220px;
   font-size: large;
 }
 
