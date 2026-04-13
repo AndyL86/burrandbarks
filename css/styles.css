@@ -590,4 +590,12 @@ li {
   .pet-care-text {
     padding: 70px 30px;
   }
+
+  .featured-services {
+    min-height: 530px;
+  }
 }
+
+.featured-services {
+    min-height: 675px;
+  }
